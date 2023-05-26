@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/",
+    "queryParameters": {
+      "region": {
+        "equalTo": "44"
+      }
+    }
+  },
+   "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "body": "{\"regionName\":\"Костромская область\",\"population\":571334}"
+  }
+}
+

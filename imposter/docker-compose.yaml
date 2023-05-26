@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  wiremock:
+    image: rodolpheche/wiremock:latest
+    ports:
+      - "8080:8080"
+    networks:
+      - perNet
+    volumes:
+      - ./mappings:/home/wiremock/mappings
+      - ./__files:/home/wiremock/__files
+    command: ["--verbose"]
+
+networks:
+  perNet:
+

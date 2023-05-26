@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/",
+    "queryParameters": {
+      "region": {
+        "equalTo": "76"
+      }
+    }
+  },
+   "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "body": "{\"regionName\":\"Ярославская область\",\"population\":1270000}"
+  }
+}
+

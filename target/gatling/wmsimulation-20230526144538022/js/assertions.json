@@ -1,0 +1,10 @@
+{
+  "simulation": "simulations.WMSimulation",
+  "simulationId": "wmsimulation",
+  "start": 1685112338022,
+  "description": "",
+  "scenarios": ["WireMock Load Test"],
+  "assertions": [
+
+  ]
+}

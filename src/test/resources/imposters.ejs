@@ -1,0 +1,46 @@
+{
+    "protocol": "http",
+    "port": 888,
+    "stubs": [
+        {
+            "responses": [
+                {
+                    "is": {
+                        "statusCode": 200,
+                        "body": {
+                            "itemId": "${id}",
+                            "name": "${name}",
+                            "status": "ok"
+                        }
+                   },
+                    "behaviors": [
+                        {
+                            "copy": {
+                                "from": {
+                                    "query": "id"
+                                },
+                                "into": "${id}",
+                                "using": {
+                                    "method": "regex",
+                                    "selector": "\\d+"
+                                }
+                            }
+                        },
+                        {
+                            "copy": {
+                                "from": {
+                                    "query": "name"
+                                },
+                                "into": "${name}",
+                                "using": {
+                                    "method": "regex",
+                                    "selector": ".+"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
